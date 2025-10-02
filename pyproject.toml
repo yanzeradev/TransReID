@@ -8,5 +8,9 @@ version = "0.1.0"
 description = "projeto transreid customizado"
 requires-python = ">=3.10,<=3.13"
 
+packages = [
+    { include = "transreid" }
+]
+
 [tool.setuptools.packages.find]
 where = ["."]
