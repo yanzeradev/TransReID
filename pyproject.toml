@@ -5,8 +5,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "sense-transreid"
 version = "0.1.0"
-description = "Meu projeto customizado de Botsort, TransReID e YOLO12."
-requires-python = ">=3.8"
+description = "projeto transreid customizado"
+requires-python = ">=3.10"
 
 [tool.setuptools.packages.find]
 where = ["."]
