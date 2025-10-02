@@ -1,15 +1,11 @@
-# A seção principal foi alterada de [project] para [tool.poetry] para compatibilidade
-[tool.poetry]
-name = "transreid" # Nomes de pacotes geralmente são em letras minúsculas
+[project]
+name = "TransReID"
 version = "0.1.0"
-description = "Unofficial package for TransReID: Transformer-based Object Re-Identification."
-
-# O formato dos autores foi ajustado para uma lista de strings
-authors = ["yanzeradev <yankarlos.solraknay@hotmail.com>"]
+description = ""
+authors = [
+    {name = "yanzeradev",email = "yankarlos.solraknay@hotmail.com"}
+]
 readme = "README.md"
-
-# SEÇÃO CRÍTICA: Informa ao Poetry onde encontrar o código-fonte do pacote.
-# Isso corrige o erro "No file/folder found for package transreid".
 packages = [
     { include = "model" },
     { include = "solver" },
@@ -17,21 +13,12 @@ packages = [
     { include = "utils" },
     { include = "loss" },
     { include = "processor" },
-    { include = "config.py" },
+]
+requires-python = ">=3.10"
+dependencies = [
 ]
 
-# Seção de dependências dentro de [tool.poetry.dependencies]
-[tool.poetry.dependencies]
-python = ">=3.10"
-torch = ">=1.7.1"
-torchvision = ">=0.8.2"
-numpy = "*"
-yacs = "*"
-tqdm = "*"
-Pillow = "*"
 
-
-# A seção de build system permanece a mesma
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
