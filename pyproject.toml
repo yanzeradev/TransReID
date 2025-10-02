@@ -6,6 +6,15 @@ authors = [
     {name = "yanzeradev",email = "yankarlos.solraknay@hotmail.com"}
 ]
 readme = "README.md"
+packages = [
+    { include = "model" },
+    { include = "solver" },
+    { include = "datasets" },
+    { include = "utils" },
+    { include = "loss" },
+    { include = "processor" },
+    { include = "config.py" },
+]
 requires-python = ">=3.10"
 dependencies = [
 ]
