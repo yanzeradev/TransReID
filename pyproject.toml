@@ -6,22 +6,13 @@ authors = [
     {name = "yanzeradev",email = "yankarlos.solraknay@hotmail.com"}
 ]
 readme = "README.md"
-packages = [
-    { include = "model" },
-    { include = "solver" },
-    { include = "datasets" },
-    { include = "utils" },
-    { include = "loss" },
-    { include = "processor" },
-]
-requires-python = ">=3.10"
+
+requires-python = ">=3.10,<=3.13"
 dependencies = [
-    torch = ">=1.7.1"
-    torchvision = ">=0.8.2"
-    numpy = "*"
-    yacs = "*"
-    tqdm = "*"
-    Pillow = "*"
+    "torch (>=2.8.0,<3.0.0)",
+    "torchvision (>=0.23.0,<0.24.0)",
+    "tqdm (>=4.67.1,<5.0.0)",
+    "pillow (>=11.3.0,<12.0.0)"
 ]
 
 
