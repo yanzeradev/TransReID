@@ -1,5 +1,5 @@
 [project]
-name = "transreid"
+name = "TransReID"
 version = "0.1.0"
 description = ""
 authors = [
